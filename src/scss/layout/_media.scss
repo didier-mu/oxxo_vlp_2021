@@ -1,0 +1,68 @@
+
+body {
+    
+    // MOBILE
+    @media (max-width:992px) {
+
+
+    }// 996
+
+    
+    /// SAFARI
+
+    @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) {
+        @media (min-width:992px) {
+          
+        }
+        
+    }}
+
+    @supports (-moz-appearance:none) {
+
+        @keyframes giro {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        #ala.giroActivo {
+            // transition: all 5s;
+        }
+
+        #ala.giro1 {
+            animation: giro .5s linear 8;
+            transform: rotate(30deg);
+        }
+
+        #ala.giro2 {
+            animation: giro .5s linear 8;
+            transform: rotate(90deg);
+        }
+
+        #ala.giro3 {
+            animation: giro .5s linear 8;
+            transform: rotate(150deg);
+        }
+
+        #ala.giro4 {
+            animation: giro .5s linear 8;
+            transform: rotate(205deg);
+        }
+
+        #ala.giro5 {
+            animation: giro .5s linear 8;
+            transform: rotate(270deg);
+        }
+
+        #ala.giro6 {
+            animation: giro .5s linear 8;
+            transform: rotate(325deg);
+        }
+    }
+
+    
+}   

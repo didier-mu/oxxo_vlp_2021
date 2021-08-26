@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>OXXO </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/jquery-3.4.1.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/modernizr.js"> </script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/functionsRuleta.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <main class="home">
+      <section class="header">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-12 d-flex align-items-center justify-content-center"><img class="img-fluid" id="logo" src="../img/Logo_VLP.png" alt="OXXO"><img class="img-fluid" id="cohetes" src="../img/Fireworks.png" alt="OXXO"></div>
+            <div class="col-12 header--title">
+              <h1> <b>GIRA EL SOMBRERO <br>Y GANA INCREÍBLES CUPONES.</b></h1>
+              <h2>RECUERDA QUE SOLO PUEDES PARTICIPAR 4 VECES AL DÍA</h2>
+            </div>
+          </div>
+          <div class="row header--bases">
+            <div class="col-12 d-flex align-items-center justify-content-center"><img class="img-fluid" src="../img/Titulo.png" alt=""></div>
+            <div class="col-12"> 
+              <ul> 
+                <li>GIRA EL SOMBRERO</li>
+                <li>Gana un cupón</li>
+                <li>Descarga y ¡disfruta!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sombrero">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-9"><img class="img-fluid" id="botonGirar" src="../img/Gira.png" alt="">
+              <div class="sombrero__ruleta"><img class="img-fluid" id="indicador" src="../img/Señalador.png" alt=""><img class="img-fluid" id="copa" src="../img/centro.png" alt=""><img class="img-fluid" id="ala" src="../img/Sombrero.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal fade" id="modalDefault" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h1> <b>¡TE FALTÓ MUY POCO!</b></h1><img class="img-fluid lazoTitle" src="../img/ZIJsHQ.png" alt="OXXO">
+              <h4>SIGUE INTENTANDO QUE ESE CUPÓN ESPERA POR TI </h4><img class="img-fluid imgSad" src="../img/sad.png" alt="OXXO">
+              <h4><b>¡NO TE RAJES Y SIGUE PROBANDO SUERTE!</b></h4>
+              <input class="boton primario btnOn" type="button" value="INTENTAR DE NUEVO" data-dismiss="modal" aria-label="Close">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalCupon" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body modal-felicidades">
+              <h1> <b>¡FELICIDADES!</b></h1><img class="img-fluid lazoTitle" src="../img/ZIJsHQ.png" alt="OXXO">
+              <h4>GANASTE ESTE CUPÓN PARA ARMAR TU CENA MEXICANA.</h4><img class="img-fluid" id="cupon" src="../img/cupon.jpeg" alt=""><img class="img-fluid lazoTitle" src="../img/curva1.png" alt="OXXO">
+              <h4> <b>REGÍSTRATE Y GRITA ¡VIVAN LAS PROMOS!</b></h4><a class="linkCupon">
+                <input class="btnOn boton primario" type="button" value="REGÍSTRATE"></a>
+            </div>
+            <div class="modal-body modal-sesion">
+              <h1> <b>INICIA SESIÓN</b></h1>
+              <h4>para obtener tu cupón</h4>
+              <div class="cajaChecks">
+                <div class="checkboxes" id="checkboxLegales">
+                  <input class="checkbox" id="checkLegale" type="checkbox">
+                  <label class="checkmark" for="checkLegale"> </label>
+                  <label class="labelLegales" id="labelLegales" for="checkLegale">Acepto los <a data-target="#modalLegales" data-toggle="modal" data-dismiss="modal">Términos y Condiciones</a></label>
+                </div>
+                <div class="checkboxes" id="checkboxEdad">
+                  <input class="checkbox" id="checkEdad" type="checkbox">
+                  <label class="checkmark" for="checkEdad"> </label>
+                  <label class="labelLegales" id="labelEdad" for="checkEdad">Acepto que soy mayor de 18 años</label>
+                </div>
+              </div>
+              <h6>Tu información es 100% confidencial</h6>
+              <div class="botonera"><a class="linkLogin" href="/cuponera/facebook"><img class="img-fluid" src="https://oxxo-com.s3.amazonaws.com/media-library/08a90345b224d354d5387d186c3304ca.jpg" alt="Oxxo facebook"></a><a class="linkLogin" href="/cuponera/google"><img class="img-fluid" src="https://oxxo-com.s3.amazonaws.com/media-library/145062d27edf2a870fe1c1eb4dd415d4.jpg" alt="Oxxo google"></a></div>
+            </div>
+            <div class="modal-body modal-cupon">
+              <h1> <b>Cupón de Doritos</b></h1><img class="img-fluid" id="cupon" src="../img/cupon.jpg" alt="">
+              <p>Este es tu cupón, descárgalo, envíalo a tu correo o tómale un screenshot</p>
+              <div class="botonera">
+                <input class="btnDescarga" type="button" value="Descargar imagen">
+                <input class="btnEnviar" type="button" value="Enviar a mi correo">
+              </div>
+              <h4> <b>¡Canjea en tu OXXO favorito y disfruta!</b></h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="closeModal" type="button" data-dismiss="modal" aria-label="Close"><img class="img-fluid" src="https://oxxo-com.s3.amazonaws.com/media-library/47cb78aefa4753cd42e978980d39b014.png" alt=""></div>
+            <div class="modal-body modal-felicidades">
+              <h1> <b>¡Felicidades!</b></h1>
+              <h4>Has ganado un premio especial</h4>
+              <p>Tienes 5 minutos para redimir el cupón</p><img class="img-fluid" id="cupon" src="../img/cupon.jpg" alt=""><a class="linkCupon">
+                <input class="btnOn" type="button" value="Obtener cupón"></a>
+            </div>
+            <div class="modal-body modal-sesion">
+              <div class="cajaSesion">
+                <h1>Inicia sesión</h1>
+                <h4>para obtener tu cupón</h4>
+                <div class="checkboxes" id="checkboxLegales">
+                  <input class="checkbox" id="checkLegale" type="checkbox">
+                  <label class="checkmark" for="checkLegale"> </label>
+                  <label class="labelLegales" id="labelLegales" for="checkLegale">Acepto los <a data-target="#modalLegales" data-toggle="modal" data-dismiss="modal">Términos y Condiciones</a></label>
+                </div>
+                <div class="checkboxes" id="checkboxEdad">
+                  <input class="checkbox" id="checkEdad" type="checkbox">
+                  <label class="checkmark" for="checkEdad"> </label>
+                  <label class="labelLegales" id="labelEdad" for="checkEdad">Acepto que soy mayor de 18 años</label>
+                </div>
+                <h6>Tu información es 100% confidencial</h6>
+                <div class="botonera"><a class="linkLogin" href="/cuponera/facebook"><img class="img-fluid" src="https://oxxo-com.s3.amazonaws.com/media-library/08a90345b224d354d5387d186c3304ca.jpg" alt="Oxxo facebook"></a><a class="linkLogin" href="/cuponera/google"><img class="img-fluid" src="https://oxxo-com.s3.amazonaws.com/media-library/145062d27edf2a870fe1c1eb4dd415d4.jpg" alt="Oxxo google"></a></div>
+              </div>
+            </div>
+            <div class="modal-body modal-cupon">
+              <h1> <b>Cupón de Premio especial</b></h1><img class="img-fluid" id="cupon" src="../img/cupon.jpg" alt="">
+              <p>Este es tu cupón, descárgalo, envíalo a tu correo o tómale un screenshot</p>
+              <div class="botonera">
+                <input class="btnDescarga" type="button" value="Descargar imagen">
+                <input class="btnEnviar" type="button" value="Enviar a mi correo">
+              </div>
+              <h4> <b>Para canjear tu premio revisa los legales de tu cupón</b></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

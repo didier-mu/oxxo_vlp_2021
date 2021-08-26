@@ -1,0 +1,102 @@
+@mixin boton{
+    appearance: none;
+    outline: none;
+    border: none;
+    height: 60px;
+    min-width: 200px;
+    font-size: var(--h4);
+    font-family: var(--secundariaBold);
+    border-radius: 10px;
+    transition: .3s ease-in-out all;
+
+    &.primario{
+        background: var(--secundario);
+        color: #fff;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+}
+
+.boton{
+    @include boton;
+}
+ 
+@mixin checkbox {
+
+    display: flex; 
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 15px;
+    flex-flow: column;
+    width: 100%;
+
+    input{
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: #fff;
+        }
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+    
+    .label{
+        color: #000;
+        
+        a{
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+    
+    .checkmark{
+        height: 26px;
+        width: 25px;
+        border-radius: 5px;
+        border:2px solid #000;
+        margin-right: 10px;
+        position: relative;
+
+        &:after{
+            left: 7px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 8px;
+            height: 12px;
+            border: solid ;;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+    
+    
+
+    .msjError{
+        color: #000;
+        flex: 0 0 100%;
+        padding-left: 35px;
+        display: none;
+        
+    }
+
+}
+
+.checkboxes{
+    @include checkbox;
+}

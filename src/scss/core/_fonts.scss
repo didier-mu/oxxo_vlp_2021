@@ -1,0 +1,54 @@
+
+
+@font-face {
+	font-family: 'TitilliumWeb-Regular';
+	src: url('../fonts/PrimariaRegular/TitilliumWeb-Regular.eot');
+	src: local('☺'), 
+			url('../fonts/PrimariaRegular/TitilliumWeb-Regular.woff') format('woff'), 
+			url('../fonts/PrimariaRegular/TitilliumWeb-Regular.ttf') format('truetype'), 
+			url('../fonts/PrimariaRegular/TitilliumWeb-Regular.otf') format('opentype'), 
+			url('../fonts/PrimariaRegular/TitilliumWeb-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TitilliumWeb-Bold';
+	src: url('../fonts/PrimariaBold/TitilliumWeb-Bold.eot');
+	src: local('☺'), 
+			url('../fonts/PrimariaBold/TitilliumWeb-Bold.woff') format('woff'), 
+			url('../fonts/PrimariaBold/TitilliumWeb-Bold.ttf') format('truetype'), 
+			url('../fonts/PrimariaBold/TitilliumWeb-Bold.otf') format('opentype'), 
+			url('../fonts/PrimariaBold/TitilliumWeb-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Conv_FagoCoLf';
+	src: url('../fonts/SecundariaRegular/FagoCoLf.eot');
+	src: local('☺'), url('../fonts/SecundariaRegular/FagoCoLf.woff') format('woff'), url('../fonts/SecundariaRegular/FagoCoLf.ttf') format('truetype'), url('../fonts/SecundariaRegular/FagoCoLf.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Conv_fagocolf-bold';
+	src: url('../fonts/SecundariaBold/fagocolf-bold.eot');
+	src: local('☺'), url('../fonts/SecundariaBold/fagocolf-bold.woff') format('woff'), url('../fonts/SecundariaBold/fagocolf-bold.ttf') format('truetype'), url('../fonts/SecundariaBold/fagocolf-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Conv_fagocolf-extraboldcaps';
+	src: url('../fonts/SecundariaExtraBold/fagocolf-extraboldcaps.eot');
+	src: local('☺'), url('../fonts/SecundariaExtraBold/fagocolf-extraboldcaps.woff') format('woff'), url('../fonts/SecundariaExtraBold/fagocolf-extraboldcaps.ttf') format('truetype'), url('../fonts/SecundariaExtraBold/fagocolf-extraboldcaps.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

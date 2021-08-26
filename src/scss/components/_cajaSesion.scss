@@ -1,0 +1,85 @@
+.cajaSesion{
+    &--sesion--caja{
+        padding: 50px 30px;
+        border-radius: 40px;
+        flex-direction: column;
+        align-items: center;
+        
+        h2{
+            margin-bottom: 30px;
+            color: #000;
+        }
+        
+        #cajaChecks{
+            flex-direction: column;
+        }
+         
+         .botonera{
+            margin: 10px 0 20px;
+            
+            img{
+               margin: 0 10px;
+            }
+         }
+         
+         h6{
+            color: #000;
+         }
+        
+     }
+}
+
+
+ 
+ @media (max-width:992px) {
+    .cajaSesion{
+        &--sesion--caja{
+        
+            padding: 30px 10px;
+            border-radius: 20px;
+            
+            h2{
+                font-size: var(--h3);
+                margin-bottom: 30px;
+             }
+             
+             #cajaChecks{
+                 .checkboxes{
+                    .label{
+                        font-size: var(--h5);
+                    }
+                    
+                    .msjError{
+                        text-align: center;
+                        font-size: var(--h6);
+                     }
+                 }
+             }
+            
+            .botonera{
+               flex-direction: column;
+               
+               a{
+                  img{
+                     margin: auto auto 20px;   
+                  }
+                  
+                  &:last-child{
+                     img{
+                        margin: auto;   
+                     }
+                     
+                  }
+               }
+            }
+            
+            h6{
+                font-size: var(--h6);
+                text-align: center;
+             }
+         }
+    }
+   
+     
+ }
+ 

@@ -1,0 +1,35 @@
+section.cajaSesion
+    .container 
+        .row.justify-content-center
+            .col-lg-8
+                form.cajaSesion--sesion--caja.d-flex
+                    h2 
+                        b Para participar regístrate aquí
+
+                    #cajaChecks.d-flex
+                        .checkboxes#cajaEdad
+                            .check
+                                input#checkEdad.checkbox(type='checkbox')
+                                label#checkboxEdad.checkmark(for='checkEdad')  
+                                label.label#labelEdads(for='checkEdad')
+                                    | Acepto que soy mayor de 18 años
+                            span.msjError.show Debes ser mayor de 18 años.
+
+ 
+                        .checkboxes#cajaLegal  
+                            .check
+                                input#checkLegale.checkbox(type='checkbox')
+                                label#checkboxLegales.checkmark(for='checkLegale')  
+                                label.label#labelLegales(for='checkLegale')
+                                    | Acepto 
+                                    a#linkTerminos(href="terminos-y-condiciones.php") Términos y Condiciones.
+                            span.msjError.show Debes aceptar los términos y condiciones
+
+                    .botonera.d-flex
+                        a#linkFb(href="/registro.php")
+                            img.img-fluid#imgFb(src="https://oxxo-com.s3.amazonaws.com/media-library/589bdf162cb8c73ddda2ba08e456d87c.png" alt="Oxxo facebook")
+
+                        a#linkGoogle(href="/registro.php")
+                            img.img-fluid#imgGoogle(src="https://oxxo-com.s3.amazonaws.com/media-library/b2f398dea86c7fc26b3b060baf4dc273.png" alt="Oxxo google")
+
+                    h6 Tu información es 100% confidencial. No publicaremos nada en tu nombre

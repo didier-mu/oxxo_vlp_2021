@@ -1,0 +1,26 @@
+
+
+//var
+@import "core/vars";
+
+//fonts
+@import "core/fonts";
+
+//mixins
+@import "core/mixins";
+
+
+//general styles
+@import "layout/body";
+
+
+//media viewports
+@import "layout/media";
+
+
+//COMPONENTS
+@import "components/cajaSesion";
+@import "components/forms";
+@import "components/modal";
+
+
